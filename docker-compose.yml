@@ -1,8 +1,8 @@
 version: "3.8"
 
 services:
-  awsome_todo:
+  piano_demo:
     build: .
-    container_name: awsome_todo
+    container_name: piano_demo
     ports:
       - "6144:80"
