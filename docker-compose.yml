@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  awsome_todo:
+    build: .
+    container_name: awsome_todo
+    ports:
+      - "6144:80"
