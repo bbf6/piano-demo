@@ -1,6 +1,6 @@
 import { useConfigStore } from 'src/stores/config'
 
-const FILE_PATH = 'src/assets/piano/'
+const FILE_PATH = '/piano/'
 
 const getFileName = key => {
   const configStore = useConfigStore()
