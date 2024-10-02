@@ -1,7 +1,16 @@
 # Piano Demo
-Just a simple piano app done with quasar and ionic for android
+Just a simple piano app done with quasar and ionic for android.
 
-## Install the dependencies
+You can see a working deploy of this demo on [https://piano.devartiral.com](https://piano.devartiral.com)
+
+## Install with quasar cli
+
+### Install quasar cli
+```bash
+sudo npm i -g @quasar/cli
+```
+
+### Install dependencies
 ```bash
 yarn
 # or
@@ -17,3 +26,11 @@ quasar dev
 ```bash
 quasar build -m capacitor -T android
 ```
+
+## Install with docker
+Just run:
+```bash
+docker compose up --build --detach
+```
+
+This will deploy the full app as a web app on `localhost:6144`.
