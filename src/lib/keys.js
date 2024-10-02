@@ -4,9 +4,8 @@ const FILE_PATH = '/piano/'
 
 const getFileName = key => {
   const configStore = useConfigStore()
-  const name = key.alphabet.toLowerCase()
-  const fullPath = `${FILE_PATH}${name}${configStore.currentOctave}.mp3`
-  return encodeURIComponent(fullPath)
+  const name = key.alphabet.toLowerCase().replace('#', '_sharp_')
+  return `${FILE_PATH}${name}${configStore.currentOctave}.mp3`
 }
 
 const pressKey = key => {

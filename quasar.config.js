@@ -170,6 +170,10 @@ module.exports = configure(function (/* ctx */) {
       hideSplashscreen: true
     },
 
+    bin: {
+      linuxAndroidStudio: '/snap/android-studio-canary/current/android-studio/bin/studio.sh'
+    },
+
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/developing-electron-apps/configuring-electron
     electron: {
       // extendElectronMainConf (esbuildConf)
